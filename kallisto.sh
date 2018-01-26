@@ -10,8 +10,10 @@
 ###
 
 trimmomatic=$HOME/bin/Trimmomatic-0.32/trimmomatic-0.32.jar # Path to trimmomatic jar
-kallisto_idx=$HOME/indexes/SL3.0/ITAG3.20/ITAG3.20_CDS_kallisto_index # Path to the kallisto index, make the index before run.
-samplelist=/sonas-hs/lippman/hpc/data/bop_RNAseq/Kallisto/Samples # pathtoread1	pathtoread2	samplename
+#kallisto_idx=$HOME/indexes/SL3.0/ITAG3.20/ITAG3.20_CDS_kallisto_index # Path to the kallisto index, make the index before run.
+KALLISTOINDEX LINE
+#samplelist=/sonas-hs/lippman/hpc/data/bop_RNAseq/Kallisto/Samples # pathtoread1	pathtoread2	samplename
+SAMPLELIST LINE
 
 while read read1 read2 sample rest; do
 	echo -ne "\n#########################################\n#########################################\n\nStarting sample: $sample\n\n" ;
