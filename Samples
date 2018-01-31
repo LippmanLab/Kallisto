@@ -1,0 +1,3 @@
+/sonas-hs/lippman/nlsas/data/bop_RNAseq/299383_S1_R1_001.fastq.gz	/sonas-hs/lippman/nlsas/data/bop_RNAseq/299383_S1_R2_001.fastq.gz	M82_TM1
+/sonas-hs/lippman/nlsas/data/bop_RNAseq/299383_S1_R1_001.fastq.gz	/sonas-hs/lippman/nlsas/data/bop_RNAseq/299383_S1_R2_001.fa	M82_TM_willfail
+/sonas-hs/lippman/nlsas/data/bop_RNAseq/299384_S2_R1_001.fastq.gz	/sonas-hs/lippman/nlsas/data/bop_RNAseq/299384_S2_R2_001.fastq.gz	M82_TM2
