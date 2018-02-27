@@ -105,10 +105,10 @@ while read read1 read2 sample rest; do
 	# Start kallisto run... pass through if else to run the correct PE or SE command.
 	if [ $read2 != "none" ] ; then
 		echo "Starting PE kallisto run..." ; date
-		kallisto quant --index=$kallistoidx --output-dir=$sample --threads=8 $TMPDIR/"$read1short"_P1.fastq $TMPDIR/"$read2short"_P2.fastq -b=$bootstraps
+		kallisto quant --index=$kallistoidx --output-dir=$sample --threads=8 --bootstrap-samples=$bootstraps $TMPDIR/"$read1short"_P1.fastq $TMPDIR/"$read2short"_P2.fastq
 	else
 		echo "Starting SE kallisto run..." ; date
-		kallisto quant --index=$kallisto_idx --output-dir=$sample --single --fragment-length=200 --sd=40 --threads=8 $TMPDIR/"$read1short"_P1.fastq -b=$bootstraps
+		kallisto quant --index=$kallisto_idx --output-dir=$sample --single --fragment-length=200 --sd=40 --threads=8 --bootstrap-samples=$bootstraps $TMPDIR/"$read1short"_P1.fastq
 	fi
 	echo "Done with kallisto run..." ; date
 
